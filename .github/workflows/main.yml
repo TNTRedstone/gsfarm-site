@@ -11,7 +11,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
               env:
-                message: ${{ github.event.head_commit.message }}
+                  message: ${{ github.event.head_commit.message }}
               with:
                   fetch-depth: 0
                   token: ${{ secrets.ACTIONS_TOKEN }}
