@@ -1,16 +1,25 @@
 name: build-website
 on:
-  push:
-    branches: ['master']
-  pull_request:
-    branches: ['master']
+    push:
+        branches: ['master']
+    pull_request:
+        branches: ['master']
 jobs:
-  build:
-    name: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
-      - run: bun install
-      - run: bun prettier . --write
-      - run: bun run build
+    build:
+        name: build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: oven-sh/setup-bun@v1
+            - run: bun install
+            - run: bun prettier . --write
+            - run: bun run build
+            - name: Create and push build-output branch
+              uses: actions/checkout@v3
+              with:
+                  ref: build-output # Create the branch if it doesn't exist
+                  token: ${{ secrets.GITHUB_TOKEN }} # Use the provided token for authentication
+            - run: git rm -r . --cached
+                  git add build
+                  git commit -m "Deploying build output"
+                  git push origin build-output

@@ -8,6 +8,6 @@ It should be hosted on https://www.gs-farm.net altough because I used the static
 
 ### Tools used:
 
-- Bun
-- SvelteKit
-- Tailwind CSS
+-   Bun
+-   SvelteKit
+-   Tailwind CSS
