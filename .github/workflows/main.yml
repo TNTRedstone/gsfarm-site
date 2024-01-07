@@ -20,6 +20,5 @@ jobs:
               with:
                 add: '*'
                 message: 'Build that commit'
-                author_name: 'GitHub Actions Bot'
                 author_email: 'cgsteck@outlook.com'
                 github_token: ${{ secrets.ACTIONS_TOKEN }}
