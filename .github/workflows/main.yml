@@ -22,4 +22,4 @@ jobs:
                 add: '*'
                 message: 'Build that commit'
                 author_email: 'cgsteck@outlook.com'
-                github_token: ${{ secrets.GITHUB_TOKEN }}
+                github_token: ${{ secrets.ACTIONS_TOKEN }}
