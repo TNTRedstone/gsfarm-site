@@ -2,8 +2,12 @@ name: build-website
 on:
     push:
         branches: ['master']
+        paths:
+          - 'src/**'
     pull_request:
         branches: ['master']
+        paths:
+          - 'src/**'
 jobs:
     build:
         name: build
@@ -20,7 +24,6 @@ jobs:
             - run: bun prettier . --write
             - run: bun run build
             - uses: EndBug/add-and-commit@v9
-              if: ${{ github.event.head_commit.message }} != 'Build that commit'
               with:
                   add: '*'
                   message: 'Build that commit'
