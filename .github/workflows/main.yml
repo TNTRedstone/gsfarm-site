@@ -19,7 +19,8 @@ jobs:
               with:
                   ref: build-output # Create the branch if it doesn't exist
                   token: ${{ secrets.GITHUB_TOKEN }} # Use the provided token for authentication
-            - run: git rm -r . --cached \
-                  git add build \
-                  git commit -m "Deploying build output" \
-                  git push origin build-output \
+            - run: |
+                  git rm -r . --cached \
+                  && git add build \
+                  && git commit -m "Deploying build output" \
+                  && git push origin build-output
