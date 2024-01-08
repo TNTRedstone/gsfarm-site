@@ -28,9 +28,9 @@
 </script>
 
 <div class="bg-sky-300 rounded">
-    <h2 class="sm:text-sm md:text-md lg:text-lg">{label}</h2>
-    <li class="sm:text-sm md:text-md">{countdown[0]} days</li>
-    <li class="sm:text-sm md:text-md">{countdown[1]} hours</li>
-    <li class="sm:text-sm md:text-md">{countdown[2]} minutes</li>
-    <li class="sm:text-sm md:text-md">{countdown[3]} seconds</li>
+    <h2 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">{label}</h2>
+    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[0]} days</li>
+    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[1]} hours</li>
+    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[2]} minutes</li>
+    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[3]} seconds</li>
 </div>
