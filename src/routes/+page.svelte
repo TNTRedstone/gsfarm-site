@@ -4,5 +4,8 @@
         <a href="./countdowns" class="rounded bg-sky-400 p-2 text-center hover:bg-sky-500"
             >Countdowns</a
         >
+        <a href="./animal-albums" class="rounded bg-sky-400 p-2 text-center hover:bg-sky-500"
+            >Animals</a
+        >
     </div>
 </main>
