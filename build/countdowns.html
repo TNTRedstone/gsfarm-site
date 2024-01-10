@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+<<<<<<< HEAD
 
         <link href="./_app/immutable/assets/0.bevCsbi6.css" rel="stylesheet" />
         <link rel="modulepreload" href="./_app/immutable/entry/start.bQ5f6Qtf.js" />
@@ -41,11 +42,33 @@
                         base: new URL('.', location).pathname.slice(0, -1),
                         env: null
                     };
+=======
+        
+		<link href="./_app/immutable/assets/0.bevCsbi6.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.AgX-z4vN.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.k-kUyWhY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.PVSLvZfe.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.M4JNTUnD.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.QGuRUDPK.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.eke5pEVr.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.TLjoPEJ6.js">
+    </head>
+    <body data-sveltekit-preload-data="hover">
+        <div style="display: contents">  <main><h1 class="sm:text-sm md:text-md lg:text-lg xl:text-xl" data-svelte-h="svelte-1ccmg4r">Countdowns:</h1> <div class="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 m-1"><div class="bg-sky-300 rounded"><h2 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Calvin's birthday</h2> <li class="sm:text-sm md:text-md lg:text-lg">0 days</li> <li class="sm:text-sm md:text-md lg:text-lg">1 hours</li> <li class="sm:text-sm md:text-md lg:text-lg">56 minutes</li> <li class="sm:text-sm md:text-md lg:text-lg">51 seconds</li></div></div></main> 
+			
+			<script>
+				{
+					__sveltekit_qtab0x = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: null
+					};
+>>>>>>> master
 
                     const element = document.currentScript.parentElement;
 
                     const data = [null, null];
 
+<<<<<<< HEAD
                     Promise.all([
                         import('./_app/immutable/entry/start.bQ5f6Qtf.js'),
                         import('./_app/immutable/entry/app.2Zoup1sv.js')
@@ -60,5 +83,21 @@
                 }
             </script>
         </div>
+=======
+					Promise.all([
+						import("./_app/immutable/entry/start.AgX-z4vN.js"),
+						import("./_app/immutable/entry/app.M4JNTUnD.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+>>>>>>> master
     </body>
 </html>
