@@ -7,5 +7,6 @@
         <a href="./animal-albums" class="rounded bg-sky-400 p-2 text-center hover:bg-sky-500"
             >Animals</a
         >
+        <a href="./blog" class="rounded bg-sky-400 p-2 text-center hover:bg-sky-500">Blog</a>
     </div>
 </main>
