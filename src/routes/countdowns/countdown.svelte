@@ -17,7 +17,12 @@
             let minutes = Math.floor((differenceInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((differenceInMilliseconds % (1000 * 60)) / 1000);
 
-            countdown = [days, hours, minutes, seconds];
+            countdown = [
+                days.toString() + ' days',
+                hours.toString() + ' hours',
+                minutes.toString() + ' minutes',
+                seconds.toString() + ' seconds'
+            ];
         } else {
             countdown = ['Event has passed'];
         }
@@ -28,9 +33,8 @@
 </script>
 
 <div class="bg-sky-300 rounded">
-    <h2 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">{label}</h2>
-    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[0]} days</li>
-    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[1]} hours</li>
-    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[2]} minutes</li>
-    <li class="sm:text-sm md:text-md lg:text-lg">{countdown[3]} seconds</li>
+    <h2 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">{label}:</h2>
+    {#each countdown as event}
+        <li class="sm:text-sm md:text-md lg:text-lg">{event}</li>
+    {/each}
 </div>
