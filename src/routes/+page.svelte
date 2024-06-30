@@ -8,5 +8,8 @@
             >Animals</a
         >
         <a href="./blog" class="rounded bg-sky-400 p-2 text-center hover:bg-sky-500">Blog</a>
+        <a href="./chore-tracker" class="rounded bg-sky-400 p-2 text-center hover:bg-sky-500"
+            >Chore tracker</a
+        >
     </div>
 </main>

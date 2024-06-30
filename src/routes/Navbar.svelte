@@ -25,6 +25,12 @@
                         href="/blog">Blog</a
                     >
                 </li>
+                <li>
+                    <a
+                        class="rounded bg-sky-400 p-2 m-1 text-center hover:bg-sky-500 nav-buttons"
+                        href="/chore-tracker">Chore Tracker</a
+                    >
+                </li>
             </ul>
         </div>
     </div>
