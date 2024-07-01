@@ -4,7 +4,7 @@
     let date;
 
     function submit() {
-        fetch(`http://172.19.64.1:5000/data/${chore}/${minutes}/${date}`, { mode: 'no-cors' });
+        fetch(`http://10.0.0.178:5000/data/${chore}/${minutes}/${date}`, { mode: 'no-cors' });
     }
 </script>
 
